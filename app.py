@@ -16,7 +16,7 @@ st.markdown("Predicting and Analyzing Potentially Hazardous Asteroids (PHAs)")
 # 2. Load Models
 @st.cache_resource
 def load_models():
-    clf = joblib.load('models/best_classification_model.pkl')
+    clf =  joblib.load('models/best_classification_model.pkl')
     reg = joblib.load('models/best_regression_model.pkl')
     clus = joblib.load('models/kmeans_model.pkl')
     return clf, reg, clus
